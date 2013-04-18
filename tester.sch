@@ -21337,9 +21337,7 @@ Copyright: Würth Elektronik</description>
 <part name="FRAME1" library="markus" deviceset="FRAME_A3" device="" value="frame"/>
 <part name="Q3" library="transistor-pnp" deviceset="BC328*" device="" technology="-40"/>
 <part name="D3" library="markus" deviceset="SCHOTTKY-DIODE" device="_3-10" value="SB130"/>
-<part name="L1" library="EagleLibrary_Wuerth_Elektronik_eiSos_Version_6" deviceset="WE-RFI" device="_1008" value="10µH">
-<attribute name="CURRENT" value="0.1A"/>
-</part>
+<part name="L1" library="EagleLibrary_Wuerth_Elektronik_eiSos_Version_6" deviceset="WE-RFI" device="_1008" value="10µH"/>
 <part name="LED1" library="led" deviceset="LED" device="5MM" value="POWER LED"/>
 <part name="G1" library="battery" deviceset="AB9V" device=""/>
 <part name="S1" library="switch-misc" deviceset="9077-1" device=""/>
@@ -21535,9 +21533,7 @@ Brightness</text>
 <attribute name="VALUE" x="88.138" y="211.836" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="D3" gate="G$1" x="60.96" y="208.28"/>
-<instance part="L1" gate="G$1" x="123.19" y="208.28">
-<attribute name="CURRENT" x="120.142" y="201.803" size="1.778" layer="96"/>
-</instance>
+<instance part="L1" gate="G$1" x="171.45" y="190.5"/>
 <instance part="LED1" gate="G$1" x="71.12" y="162.56"/>
 <instance part="G1" gate="G$1" x="53.34" y="193.04" rot="R90"/>
 <instance part="S1" gate="1" x="99.06" y="170.18" rot="R270"/>
@@ -22121,14 +22117,11 @@ Brightness</text>
 <wire x1="132.08" y1="213.36" x2="132.08" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="208.28" x2="132.08" y2="203.2" width="0.1524" layer="91"/>
 <junction x="132.08" y="208.28"/>
-<pinref part="U1" gate="G$1" pin="AVCC"/>
-<wire x1="180.34" y1="190.5" x2="152.4" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="152.4" x2="152.4" y2="190.5" width="0.1524" layer="91"/>
-<junction x="152.4" y="190.5"/>
 <pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="190.5" x2="152.4" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="208.28" x2="152.4" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="208.28" x2="152.4" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VCC@1"/>
 <wire x1="180.34" y1="165.1" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -22139,8 +22132,15 @@ Brightness</text>
 <wire x1="147.32" y1="208.28" x2="152.4" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="165.1" x2="147.32" y2="208.28" width="0.1524" layer="91"/>
 <junction x="147.32" y="208.28"/>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="128.27" y1="208.28" x2="132.08" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="166.37" y1="190.5" x2="152.4" y2="190.5" width="0.1524" layer="91"/>
+<junction x="152.4" y="190.5"/>
+<pinref part="U2" gate="IC" pin="OUT"/>
+<wire x1="111.76" y1="208.28" x2="114.3" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="204.47" x2="114.3" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="208.28" x2="114.3" y2="208.28" width="0.1524" layer="91"/>
+<junction x="114.3" y="208.28"/>
 </segment>
 <segment>
 <pinref part="P+8" gate="+5V" pin="+5V"/>
@@ -22344,17 +22344,6 @@ Brightness</text>
 <wire x1="172.72" y1="177.8" x2="172.72" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="1"/>
 <junction x="172.72" y="177.8"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="U2" gate="IC" pin="OUT"/>
-<wire x1="111.76" y1="208.28" x2="114.3" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="204.47" x2="114.3" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="208.28" x2="118.11" y2="208.28" width="0.1524" layer="91"/>
-<junction x="114.3" y="208.28"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -22701,6 +22690,13 @@ Brightness</text>
 <segment>
 <pinref part="U5" gate="G$1" pin="REXT"/>
 <pinref part="R18" gate="1" pin="A"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="L1" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="AVCC"/>
+<wire x1="176.53" y1="190.5" x2="180.34" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
