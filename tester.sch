@@ -24494,6 +24494,8 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="JP6" library="pinhead" deviceset="PINHD-1X2" device="" value="POWERSW"/>
 <part name="PLATINENSAMMLER" library="Platinensammler" deviceset="LP_NUMBER" device="08_SILK_TOP"/>
 <part name="JP7" library="con-lsta" deviceset="FE02-1" device="" value="TEST2"/>
+<part name="SUPPLY5" library="supply2" deviceset="V+" device=""/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -24726,6 +24728,8 @@ Brightness</text>
 <instance part="JP6" gate="G$1" x="78.74" y="167.64" rot="R270"/>
 <instance part="PLATINENSAMMLER" gate="G$1" x="351.79" y="248.92"/>
 <instance part="JP7" gate="G$1" x="284.48" y="228.6" rot="R270"/>
+<instance part="SUPPLY5" gate="1" x="118.11" y="111.76"/>
+<instance part="C16" gate="G$1" x="317.5" y="139.7"/>
 </instances>
 <busses>
 <bus name="BUS1:PB[0..5],PC[0..6],PD[0..7]">
@@ -24788,6 +24792,10 @@ Brightness</text>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="309.88" y1="125.73" x2="309.88" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="309.88" y1="127" x2="317.5" y2="127" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="127" x2="317.5" y2="134.62" width="0.1524" layer="91"/>
+<junction x="309.88" y="127"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="1" pin="6"/>
@@ -25768,16 +25776,6 @@ Brightness</text>
 <pinref part="U4" gate="P" pin="V+"/>
 <wire x1="27.94" y1="83.82" x2="27.94" y2="109.22" width="0.1524" layer="91"/>
 <junction x="27.94" y="109.22"/>
-<junction x="109.22" y="109.22"/>
-<pinref part="DIS1" gate="G$1" pin="20"/>
-<wire x1="157.48" y1="81.28" x2="118.11" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="118.11" y1="81.28" x2="118.11" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="118.11" y1="109.22" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="83.82" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="DIS1" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="83.82" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
-<junction x="157.48" y="81.28"/>
 <pinref part="P+4" gate="G$1" pin="+5V/2"/>
 <wire x1="17.78" y1="111.76" x2="17.78" y2="109.22" width="0.1524" layer="91"/>
 <junction x="17.78" y="109.22"/>
@@ -25821,6 +25819,21 @@ Brightness</text>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="309.88" y1="149.86" x2="309.88" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="1" pin="V+"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="317.5" y1="142.24" x2="317.5" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="149.86" x2="309.88" y2="149.86" width="0.1524" layer="91"/>
+<junction x="309.88" y="149.86"/>
+</segment>
+<segment>
+<pinref part="DIS1" gate="G$1" pin="20"/>
+<wire x1="157.48" y1="83.82" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="DIS1" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="83.82" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
+<junction x="157.48" y="81.28"/>
+<wire x1="157.48" y1="81.28" x2="118.11" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="118.11" y1="81.28" x2="118.11" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="1" pin="V+"/>
 </segment>
 </net>
 <net name="N$1" class="0">
