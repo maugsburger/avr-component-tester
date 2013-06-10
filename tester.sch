@@ -4276,25 +4276,35 @@ Metric Code Size 5664</description>
 </library>
 <library name="transistor-pnp">
 <packages>
-<package name="TO92-EBC">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 5.08 mm</description>
-<wire x1="-2.095" y1="-2.921" x2="2.095" y2="-2.921" width="0.127" layer="21"/>
-<wire x1="-2.413" y1="-0.1341" x2="2.413" y2="-0.1341" width="0.127" layer="21" curve="-129.583"/>
-<wire x1="1.136" y1="-1.397" x2="-1.136" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="-2.413" y1="-0.1341" x2="-2.413" y2="-2.4059" width="0.127" layer="51" curve="50.4167"/>
-<wire x1="-1.404" y1="-1.397" x2="-2.664" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="-2.4135" y1="-2.4059" x2="-2.095" y2="-2.921" width="0.127" layer="21" curve="13.0385"/>
-<wire x1="-1.136" y1="-1.397" x2="-1.404" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="2.413" y1="-2.4059" x2="2.413" y2="-0.1341" width="0.127" layer="51" curve="50.4167"/>
-<wire x1="2.664" y1="-1.397" x2="1.404" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="1.404" y1="-1.397" x2="1.136" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="2.095" y1="-2.921" x2="2.4247" y2="-2.3818" width="0.127" layer="21" curve="13.6094"/>
-<pad name="C" x="-2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
-<pad name="E" x="2.54" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
-<pad name="B" x="0" y="-1.27" drill="0.8128" shape="long" rot="R90"/>
-<text x="-2.54" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-4.572" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<package name="SOT23-BEC">
+<description>&lt;b&gt;TO-236&lt;/b&gt; ITT Intermetall</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="51"/>
+<smd name="C" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="E" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="B" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="SOT323-BEC">
+<description>SOT323 Philips</description>
+<wire x1="0.9224" y1="0.4604" x2="0.9224" y2="-0.4604" width="0.127" layer="51"/>
+<wire x1="0.9224" y1="-0.4604" x2="-0.9224" y2="-0.4604" width="0.127" layer="51"/>
+<wire x1="-0.9224" y1="-0.4604" x2="-0.9224" y2="0.4604" width="0.127" layer="51"/>
+<wire x1="-0.9224" y1="0.4604" x2="0.9224" y2="0.4604" width="0.127" layer="51"/>
+<smd name="3" x="0" y="0.9" dx="0.6" dy="1" layer="1"/>
+<smd name="1" x="-0.65" y="-0.9" dx="0.6" dy="1" layer="1"/>
+<smd name="2" x="0.65" y="-0.9" dx="0.6" dy="1" layer="1"/>
+<text x="-1.905" y="1.505" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-2.775" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.5" layer="51"/>
+<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.5" layer="51"/>
+<rectangle x1="-0.15" y1="0.5" x2="0.15" y2="1.1" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -4319,23 +4329,35 @@ grid 5.08 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BC328*" prefix="Q">
+<deviceset name="BC807*" prefix="Q">
 <description>&lt;b&gt;PNP Transistror&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92-EBC">
+<device name="SMD" package="SOT23-BEC">
 <connects>
 <connect gate="G$1" pin="B" pad="B"/>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
 <technologies>
-<technology name=""/>
 <technology name="-16"/>
+<technology name="-16LT1"/>
 <technology name="-25"/>
+<technology name="-25LT1"/>
 <technology name="-40"/>
+<technology name="-40LT1"/>
+</technologies>
+</device>
+<device name="W" package="SOT323-BEC">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -24416,7 +24438,7 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="P+3" library="supply2" deviceset="+5V" device=""/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="FRAME1" library="markus" deviceset="FRAME_A3" device="" value="frame"/>
-<part name="Q3" library="transistor-pnp" deviceset="BC328*" device="" technology="-40"/>
+<part name="Q3" library="transistor-pnp" deviceset="BC807*" device="SMD" technology="-40"/>
 <part name="D3" library="markus" deviceset="SCHOTTKY-DIODE" device="_RAD3-5-A" value="SB130"/>
 <part name="LED1" library="led" deviceset="LED" device="5MMEXT" value="POWER LED"/>
 <part name="G1" library="battery" deviceset="AB9V" device=""/>
@@ -24465,8 +24487,8 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="UD-5X5,8" value="47u"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="Q9" library="transistor-power" deviceset="IRF?5305" device="R" value="IRFR9024"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="X7R 1u"/>
-<part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="X7R 10u"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="10u"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="DC1" library="dc-dc-converter" deviceset="NMA" device="" value="5V/+-15V"/>
 <part name="R26" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
@@ -24494,8 +24516,8 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="SUPPLY8" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="V+" device=""/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="X7R 1u"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="X7R 10u"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="10u"/>
 <part name="C15" library="rcl" deviceset="CPOL-EU" device="UD-5X5,8" value="47u"/>
 <part name="P1" library="pot" deviceset="TRIM_EU-" device="CA6H" value="250"/>
 <part name="P+1" library="supply2" deviceset="+5V" device=""/>
