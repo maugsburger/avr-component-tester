@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="635" altunitdist="mic" altunit="mic"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
@@ -24384,22 +24384,22 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="27k"/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="R0603" value="100k"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0603" value="680">
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="680">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R2" library="resistor" deviceset="R-EU_" device="R0603" value="470k">
+<part name="R2" library="resistor" deviceset="R-EU_" device="R0805" value="470k">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R3" library="resistor" deviceset="R-EU_" device="R0603" value="680">
+<part name="R3" library="resistor" deviceset="R-EU_" device="R0805" value="680">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R4" library="resistor" deviceset="R-EU_" device="R0603" value="470k">
+<part name="R4" library="resistor" deviceset="R-EU_" device="R0805" value="470k">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R5" library="resistor" deviceset="R-EU_" device="R0603" value="680">
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0805" value="680">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R6" library="resistor" deviceset="R-EU_" device="R0603" value="470k">
+<part name="R6" library="resistor" deviceset="R-EU_" device="R0805" value="470k">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
 <part name="R12" library="resistor" deviceset="R-EU_" device="R0603" value="3k3"/>
@@ -24451,10 +24451,10 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="DC1" library="dc-dc-converter" deviceset="NMA" device="" value="5V/+-15V"/>
 <part name="R26" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="R28" library="resistor" deviceset="R-EU_" device="R0603" value="180k">
+<part name="R28" library="resistor" deviceset="R-EU_" device="R0805" value="180k">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R29" library="resistor" deviceset="R-EU_" device="R0603" value="20k">
+<part name="R29" library="resistor" deviceset="R-EU_" device="R0805" value="20k">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
 <part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
@@ -24983,24 +24983,14 @@ Brightness</text>
 <net name="PD7" class="0">
 <segment>
 <wire x1="238.76" y1="157.48" x2="236.22" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="160.02" x2="231.14" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="PD7(AIN1)"/>
+<wire x1="236.22" y1="160.02" x2="231.14" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="113.03" y1="175.26" x2="110.49" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="Q2" gate="G$1" pin="C"/>
-<wire x1="104.14" y1="181.61" x2="104.14" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="177.8" x2="100.33" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="177.8" x2="110.49" y2="177.8" width="0.1524" layer="91"/>
-<junction x="104.14" y="177.8"/>
-<label x="106.68" y="178.054" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="196.85" y1="129.54" x2="194.31" y2="127" width="0.1524" layer="91"/>
-<pinref part="Q9" gate="G$1" pin="G"/>
-<wire x1="194.31" y1="127" x2="194.31" y2="82.55" width="0.1524" layer="91"/>
-<label x="194.31" y="127" size="1.778" layer="95" rot="R270"/>
+<wire x1="139.7" y1="129.54" x2="137.16" y2="127" width="0.1524" layer="91"/>
+<label x="137.16" y="127" size="1.778" layer="95" rot="R270"/>
+<pinref part="DIS1" gate="G$1" pin="39"/>
+<wire x1="137.16" y1="111.76" x2="137.16" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PD6" class="0">
@@ -25019,27 +25009,37 @@ Brightness</text>
 <net name="PD1" class="0">
 <segment>
 <wire x1="238.76" y1="172.72" x2="236.22" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="175.26" x2="231.14" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="PD1(TXD)"/>
+<wire x1="236.22" y1="175.26" x2="231.14" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="162.56" y1="129.54" x2="160.02" y2="127" width="0.1524" layer="91"/>
-<label x="160.02" y="127" size="1.778" layer="95" rot="R270"/>
-<pinref part="DIS1" gate="G$1" pin="30"/>
-<wire x1="160.02" y1="111.76" x2="160.02" y2="127" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="129.54" x2="165.1" y2="127" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="127" x2="165.1" y2="111.76" width="0.1524" layer="91"/>
+<label x="165.1" y="127" size="1.778" layer="95" rot="R270"/>
+<pinref part="DIS1" gate="G$1" pin="28"/>
 </segment>
 </net>
 <net name="PD0" class="0">
 <segment>
 <wire x1="238.76" y1="175.26" x2="236.22" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="177.8" x2="231.14" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="PD0(RXD)"/>
+<wire x1="236.22" y1="177.8" x2="231.14" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="160.02" y1="129.54" x2="157.48" y2="127" width="0.1524" layer="91"/>
-<label x="157.48" y="127" size="1.778" layer="95" rot="R270"/>
-<wire x1="157.48" y1="127" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="DIS1" gate="G$1" pin="31"/>
+<wire x1="113.03" y1="175.26" x2="110.49" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="Q2" gate="G$1" pin="C"/>
+<wire x1="104.14" y1="181.61" x2="104.14" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="177.8" x2="100.33" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="177.8" x2="110.49" y2="177.8" width="0.1524" layer="91"/>
+<junction x="104.14" y="177.8"/>
+<label x="106.68" y="178.054" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q9" gate="G$1" pin="G"/>
+<wire x1="194.31" y1="127" x2="194.31" y2="82.55" width="0.1524" layer="91"/>
+<label x="194.31" y="127" size="1.778" layer="95" rot="R270"/>
+<wire x1="196.85" y1="129.54" x2="194.31" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PD2" class="0">
@@ -25058,27 +25058,27 @@ Brightness</text>
 <net name="PD3" class="0">
 <segment>
 <wire x1="238.76" y1="167.64" x2="236.22" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="170.18" x2="231.14" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="PD3(INT1)"/>
+<wire x1="236.22" y1="170.18" x2="231.14" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="167.64" y1="129.54" x2="165.1" y2="127" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="127" x2="165.1" y2="111.76" width="0.1524" layer="91"/>
-<label x="165.1" y="127" size="1.778" layer="95" rot="R270"/>
-<pinref part="DIS1" gate="G$1" pin="28"/>
+<wire x1="162.56" y1="129.54" x2="160.02" y2="127" width="0.1524" layer="91"/>
+<label x="160.02" y="127" size="1.778" layer="95" rot="R270"/>
+<pinref part="DIS1" gate="G$1" pin="30"/>
+<wire x1="160.02" y1="111.76" x2="160.02" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PD4" class="0">
 <segment>
 <wire x1="238.76" y1="165.1" x2="236.22" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="167.64" x2="231.14" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="1" pin="PD4(T0/XCK)"/>
+<wire x1="236.22" y1="167.64" x2="231.14" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="129.54" x2="137.16" y2="127" width="0.1524" layer="91"/>
-<label x="137.16" y="127" size="1.778" layer="95" rot="R270"/>
-<pinref part="DIS1" gate="G$1" pin="39"/>
-<wire x1="137.16" y1="111.76" x2="137.16" y2="127" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="129.54" x2="157.48" y2="127" width="0.1524" layer="91"/>
+<label x="157.48" y="127" size="1.778" layer="95" rot="R270"/>
+<wire x1="157.48" y1="127" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="DIS1" gate="G$1" pin="31"/>
 </segment>
 </net>
 <net name="PD5" class="0">
