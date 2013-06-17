@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="635" altunitdist="mic" altunit="mic"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24440,7 +24440,7 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="FRAME1" library="markus" deviceset="FRAME_A3" device="" value="frame"/>
 <part name="Q3" library="transistor-pnp" deviceset="BC807*" device="SMD" technology="-40"/>
 <part name="D3" library="markus" deviceset="SCHOTTKY-DIODE" device="_RAD3-5-A" value="SB130"/>
-<part name="LED1" library="led" deviceset="LED" device="5MMEXT" value="POWER LED"/>
+<part name="LED1" library="led" deviceset="LED" device="5MMEXT" value="POWER"/>
 <part name="G1" library="battery" deviceset="AB9V" device=""/>
 <part name="JP2" library="con-lsta" deviceset="FE05-1" device="" value="TEST"/>
 <part name="U4" library="linear" deviceset="LM339" device="D" value="LM339D">
@@ -24487,8 +24487,8 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="UD-5X5,8" value="47u"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="Q9" library="transistor-power" deviceset="IRF?5305" device="R" value="IRFR9024"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="10u"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
+<part name="C13" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="DC1" library="dc-dc-converter" deviceset="NMA" device="" value="5V/+-15V"/>
 <part name="R26" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
@@ -24516,8 +24516,8 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="SUPPLY8" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="V+" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="V+" device=""/>
-<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="10u"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="C15" library="rcl" deviceset="CPOL-EU" device="UD-5X5,8" value="47u"/>
 <part name="P1" library="pot" deviceset="TRIM_EU-" device="CA6H" value="250"/>
 <part name="P+1" library="supply2" deviceset="+5V" device=""/>
@@ -24536,7 +24536,6 @@ Rückfragen und oder Anmerkungen bitte an &lt;b&gt;platinensammler@gmail.com&lt;
 <part name="PLATINENSAMMLER" library="Platinensammler" deviceset="LP_NUMBER" device="08_SILK_TOP"/>
 <part name="JP7" library="con-lsta" deviceset="FE02-1" device="" value="TEST2"/>
 <part name="SUPPLY5" library="supply2" deviceset="V+" device=""/>
-<part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -24581,7 +24580,7 @@ Brightness</text>
 </instance>
 <instance part="Q2" gate="G$1" x="97.79" y="172.72" smashed="yes">
 <attribute name="NAME" x="93.9292" y="173.3042" size="1.778" layer="95"/>
-<attribute name="VALUE" x="82.7532" y="169.3164" size="1.778" layer="96"/>
+<attribute name="VALUE" x="102.4636" y="162.7632" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R8" gate="G$1" x="91.44" y="157.48" smashed="yes" rot="MR0">
 <attribute name="NAME" x="89.916" y="160.8582" size="1.778" layer="95" rot="MR180"/>
@@ -24661,8 +24660,8 @@ Brightness</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="287.02" y="0"/>
 <instance part="Q3" gate="G$1" x="78.74" y="198.12" smashed="yes">
-<attribute name="NAME" x="68.58" y="205.74" size="1.778" layer="95"/>
-<attribute name="VALUE" x="83.82" y="198.12" size="1.778" layer="96"/>
+<attribute name="NAME" x="77.47" y="201.93" size="1.778" layer="95"/>
+<attribute name="VALUE" x="83.82" y="191.77" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D3" gate="G$1" x="58.42" y="208.28"/>
 <instance part="LED1" gate="G$1" x="66.04" y="170.18"/>
@@ -24684,12 +24683,15 @@ Brightness</text>
 <instance part="U4" gate="P" x="27.94" y="76.2"/>
 <instance part="GND5" gate="1" x="17.78" y="35.56"/>
 <instance part="P+4" gate="G$1" x="17.78" y="114.3"/>
-<instance part="K1" gate="1" x="280.67" y="101.6"/>
+<instance part="K1" gate="1" x="280.67" y="101.6" smashed="yes">
+<attribute name="VALUE" x="278.13" y="98.679" size="1.778" layer="96" rot="R180"/>
+<attribute name="PART" x="276.86" y="101.6" size="1.778" layer="95" rot="R180"/>
+</instance>
 <instance part="K1" gate="2" x="284.48" y="193.04" rot="R90"/>
 <instance part="K1" gate="3" x="295.91" y="193.04" rot="R90"/>
 <instance part="Q5" gate="G$1" x="278.13" y="114.3" smashed="yes">
-<attribute name="NAME" x="272.9992" y="116.1542" size="1.778" layer="95"/>
-<attribute name="VALUE" x="283.21" y="109.22" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="276.8092" y="117.4242" size="1.778" layer="95"/>
+<attribute name="VALUE" x="283.21" y="110.49" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R14" gate="G$1" x="267.97" y="114.3" smashed="yes">
 <attribute name="NAME" x="264.16" y="115.7986" size="1.778" layer="95"/>
@@ -24755,7 +24757,7 @@ Brightness</text>
 <instance part="P+1" gate="+5V" x="177.8" y="223.52"/>
 <instance part="P+5" gate="+5V" x="66.04" y="252.73"/>
 <instance part="GND9" gate="1" x="77.47" y="139.7"/>
-<instance part="SUPPLY4" gate="1" x="83.82" y="212.09"/>
+<instance part="SUPPLY4" gate="1" x="85.09" y="213.36"/>
 <instance part="P+7" gate="+5V" x="163.83" y="175.26" smashed="yes">
 <attribute name="VALUE" x="165.735" y="175.895" size="1.778" layer="96"/>
 </instance>
@@ -24770,7 +24772,6 @@ Brightness</text>
 <instance part="PLATINENSAMMLER" gate="G$1" x="351.79" y="248.92"/>
 <instance part="JP7" gate="G$1" x="284.48" y="228.6" rot="R270"/>
 <instance part="SUPPLY5" gate="1" x="118.11" y="111.76"/>
-<instance part="C16" gate="G$1" x="317.5" y="139.7"/>
 </instances>
 <busses>
 <bus name="BUS1:PB[0..5],PC[0..6],PD[0..7]">
@@ -24832,10 +24833,6 @@ Brightness</text>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="309.88" y1="125.73" x2="309.88" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="309.88" y1="127" x2="317.5" y2="127" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="127" x2="317.5" y2="134.62" width="0.1524" layer="91"/>
-<junction x="309.88" y="127"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="1" pin="6"/>
@@ -25376,13 +25373,9 @@ Brightness</text>
 <wire x1="254" y1="208.28" x2="279.4" y2="208.28" width="0.1524" layer="91"/>
 <junction x="254" y="208.28"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="279.4" y1="208.28" x2="281.94" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="208.28" x2="281.94" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="210.82" x2="279.4" y2="210.82" width="0.1524" layer="91"/>
-<junction x="281.94" y="210.82"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
-<junction x="281.94" y="208.28"/>
-<wire x1="309.88" y1="208.28" x2="281.94" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="208.28" x2="279.4" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="1"/>
 <pinref part="K1" gate="2" pin="O"/>
 <wire x1="279.4" y1="198.12" x2="279.4" y2="208.28" width="0.1524" layer="91"/>
@@ -25395,6 +25388,7 @@ Brightness</text>
 <junction x="309.88" y="208.28"/>
 <pinref part="JP7" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="220.98" x2="283.21" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="210.82" x2="279.4" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PC1" class="0">
@@ -25837,18 +25831,14 @@ Brightness</text>
 <segment>
 <pinref part="Q3" gate="G$1" pin="C"/>
 <wire x1="81.28" y1="193.04" x2="81.28" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="190.5" x2="83.82" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="190.5" x2="83.82" y2="209.55" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="190.5" x2="85.09" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="85.09" y1="190.5" x2="85.09" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="1" pin="V+"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="309.88" y1="149.86" x2="309.88" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="1" pin="V+"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="317.5" y1="142.24" x2="317.5" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="149.86" x2="309.88" y2="149.86" width="0.1524" layer="91"/>
-<junction x="309.88" y="149.86"/>
 </segment>
 <segment>
 <wire x1="165.1" y1="78.74" x2="118.11" y2="78.74" width="0.1524" layer="91"/>
