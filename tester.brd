@@ -2722,7 +2722,7 @@ Please make sure your boards conform to these design rules.</description>
 <variant name="nopwm" populate="no"/>
 </element>
 <element name="R20" library="resistor" package="R0805" value="100k" x="52.324" y="41.148" smashed="yes">
-<attribute name="NAME" x="54.991" y="39.878" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="55.245" y="39.624" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="51.435" y="39.116" size="1.27" layer="27"/>
 <variant name="nopwm" populate="no"/>
 </element>
@@ -2732,7 +2732,7 @@ Please make sure your boards conform to these design rules.</description>
 <variant name="nopwm" populate="no"/>
 </element>
 <element name="R22" library="resistor" package="R0805" value="12k" x="52.324" y="39.116" smashed="yes">
-<attribute name="NAME" x="54.991" y="36.703" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="55.245" y="36.449" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="51.435" y="37.084" size="1.27" layer="27"/>
 <variant name="nopwm" populate="no"/>
 </element>
@@ -2747,7 +2747,7 @@ Please make sure your boards conform to these design rules.</description>
 <variant name="nopwm" populate="no"/>
 </element>
 <element name="R24" library="resistor" package="R0805" value="3k3" x="52.324" y="43.18" smashed="yes">
-<attribute name="NAME" x="54.991" y="43.18" size="1.016" layer="25" rot="R90"/>
+<attribute name="NAME" x="55.245" y="42.799" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="51.435" y="41.148" size="1.27" layer="27"/>
 </element>
 <element name="K1" library="relay" package="NA" value="NA 05W K" x="46.99" y="12.7" smashed="yes" rot="R270">
@@ -2836,7 +2836,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="49.711" y="18.538" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U5" library="c-infineon_v2" package="SC74_INFINEON" value="BCR421U" x="52.451" y="46.101" smashed="yes">
-<attribute name="NAME" x="54.102" y="48.387" size="1.016" layer="25" rot="R270"/>
+<attribute name="NAME" x="55.245" y="45.72" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="51.181" y="42.926" size="1.27" layer="27"/>
 </element>
 <element name="DIS1" library="ea" package="EA_DOGM" value="EA-DOG-M162" x="3.81" y="21.59" smashed="yes">
