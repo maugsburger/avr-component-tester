@@ -23907,7 +23907,7 @@ SMD chip inductor</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="avr-7" deviceset="MEGA8-PU" device="" value="ATmega8/88/168"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="M1" library="strapubox" deviceset="SP6000" device="H-180" value="SP6000H-180"/>
+<part name="M1" library="strapubox" deviceset="SP6000" device="C-180" value="SP6000C-180"/>
 <part name="S1" library="external" deviceset="TOGGLESWITCH" device=""/>
 <part name="JP6" library="pinhead" deviceset="PINHD-1X2" device="" value="POWERSW"/>
 <part name="JP7" library="con-lsta" deviceset="FE02-1" device="" value="TEST2"/>
