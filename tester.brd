@@ -78,11 +78,11 @@
 <board>
 <plain>
 <text x="22.86" y="64.262" size="1.778" layer="21">CC-BY-SA</text>
-<text x="41.021" y="13.97" size="1.27" layer="25">1</text>
-<text x="41.021" y="11.43" size="1.27" layer="25">2</text>
-<text x="41.021" y="8.89" size="1.27" layer="25">3</text>
-<text x="41.021" y="6.35" size="1.27" layer="25">Z+</text>
-<text x="41.021" y="3.81" size="1.27" layer="25">Z-</text>
+<text x="42.291" y="13.97" size="1.27" layer="25">1</text>
+<text x="42.291" y="11.43" size="1.27" layer="25">2</text>
+<text x="42.291" y="8.89" size="1.27" layer="25">3</text>
+<text x="43.18" y="6.096" size="1.27" layer="25" rot="R90">Z+</text>
+<text x="43.18" y="3.556" size="1.27" layer="25" rot="R90">Z-</text>
 <rectangle x1="52.77" y1="46.9" x2="53.14" y2="47.7" layer="41"/>
 <rectangle x1="51.77" y1="47.8" x2="53.17" y2="47.9" layer="41"/>
 <rectangle x1="50.67" y1="44.3" x2="54.37" y2="44.4" layer="41"/>
@@ -2773,7 +2773,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="40.005" y="31.115" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="JP4" library="pinhead" package="2X05" value="TESTEXT" x="39.37" y="10.16" smashed="yes" rot="R270">
-<attribute name="VALUE" x="42.42" y="2.76" size="1.27" layer="25"/>
+<attribute name="VALUE" x="35.435" y="2.125" size="1.27" layer="25"/>
 <attribute name="REICHELT" value="AW 226/20" x="39.37" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U3" library="asko" package="TO92-LOWDROP" value="MCP1702-5002" x="52.07" y="34.29" smashed="yes" rot="R90">
