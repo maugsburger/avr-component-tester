@@ -21348,7 +21348,7 @@ SMD chip inductor</description>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0805" value="22p"/>
 <part name="Q4" library="crystal" deviceset="CRYSTAL" device="HC49S" value="8,000 MHz"/>
 <part name="U2" library="asko" deviceset="MCP1702-5002" device="" value="MCP1702-5002"/>
-<part name="R17" library="resistor" deviceset="R-EU_" device="R0805" value="27k"/>
+<part name="R14" library="resistor" deviceset="R-EU_" device="R0805" value="27k"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply2" deviceset="+5V" device=""/>
@@ -21356,7 +21356,7 @@ SMD chip inductor</description>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="FRAME1" library="markus" deviceset="FRAME_A3" device="" value="frame"/>
 <part name="Q3" library="transistor-pnp" deviceset="BC807*" device="SMD" technology="-40"/>
-<part name="D3" library="markus" deviceset="SCHOTTKY-DIODE" device="_3-10" value="SB130"/>
+<part name="D2" library="markus" deviceset="SCHOTTKY-DIODE" device="_3-10" value="SB130"/>
 <part name="LED1" library="led" deviceset="LED" device="5MMEXT" value="POWER"/>
 <part name="G1" library="battery" deviceset="AB9V" device=""/>
 <part name="JP2" library="con-lsta" deviceset="FE05-1" device="" value="TEST"/>
@@ -21387,12 +21387,12 @@ SMD chip inductor</description>
 <part name="C10" library="rcl" deviceset="C-EU" device="C0805" value="100n">
 <variant name="nopwm" populate="no"/>
 </part>
-<part name="R24" library="resistor" deviceset="R-EU_" device="R0805" value="3k3"/>
+<part name="R18" library="resistor" deviceset="R-EU_" device="R0805" value="3k3"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply2" deviceset="+5V/2" device=""/>
 <part name="K1" library="relay" deviceset="NA" device="" value="NA 05W K"/>
 <part name="Q5" library="transistor-npn" deviceset="BC847*" device="SMD" technology="C" value="BC847CSMD"/>
-<part name="R14" library="resistor" deviceset="R-EU_" device="R0805" value="4k7"/>
+<part name="R15" library="resistor" deviceset="R-EU_" device="R0805" value="4k7"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply2" deviceset="+5V" device=""/>
 <part name="R16" library="resistor" deviceset="R-EU_" device="R0805" value="2k2"/>
@@ -21403,19 +21403,19 @@ SMD chip inductor</description>
 <part name="U3" library="asko" deviceset="MCP1702-5002" device="" value="MCP1702-5002"/>
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="153CLV-0505" value="47u"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="Q9" library="transistor-power" deviceset="IRF?5305" device="R" value="IRFR9024"/>
+<part name="Q6" library="transistor-power" deviceset="IRF?5305" device="R" value="IRFR9024"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
 <part name="DC1" library="dc-dc-converter" deviceset="NMA" device="" value="5V/+-15V"/>
-<part name="R26" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="R28" library="resistor" deviceset="R-EU_" device="R0805" value="180k">
+<part name="R17" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R24" library="resistor" deviceset="R-EU_" device="R0805" value="180k">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="R29" library="resistor" deviceset="R-EU_" device="R0805" value="20k">
+<part name="R25" library="resistor" deviceset="R-EU_" device="R0805" value="20k">
 <attribute name="TOLERANCE" value="0.1%"/>
 </part>
-<part name="C17" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="SUPPLY1" library="supply2" deviceset="+24V" device="" value="+30V"/>
 <part name="SUPPLY2" library="supply2" deviceset="+24V" device="" value="+30V"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -21562,7 +21562,7 @@ Brightness</text>
 <attribute name="NAME" x="52.6542" y="251.6632" size="1.778" layer="95"/>
 <attribute name="VALUE" x="46.1772" y="248.8946" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="104.14" y="186.69" smashed="yes" rot="R90">
+<instance part="R14" gate="G$1" x="104.14" y="186.69" smashed="yes" rot="R90">
 <attribute name="NAME" x="106.2228" y="186.9186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="105.9688" y="184.3786" size="1.778" layer="96"/>
 </instance>
@@ -21580,7 +21580,7 @@ Brightness</text>
 <attribute name="NAME" x="77.47" y="201.93" size="1.778" layer="95"/>
 <attribute name="VALUE" x="83.82" y="191.77" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D3" gate="G$1" x="58.42" y="208.28"/>
+<instance part="D2" gate="G$1" x="58.42" y="208.28"/>
 <instance part="LED1" gate="G$1" x="66.04" y="170.18"/>
 <instance part="G1" gate="G$1" x="53.34" y="190.5" rot="R90"/>
 <instance part="JP2" gate="G$1" x="284.48" y="218.44" rot="R270"/>
@@ -21596,7 +21596,7 @@ Brightness</text>
 <instance part="R22" gate="G$1" x="68.58" y="101.6" rot="R90"/>
 <instance part="R23" gate="G$1" x="68.58" y="55.88" rot="R90"/>
 <instance part="C10" gate="G$1" x="78.74" y="55.88"/>
-<instance part="R24" gate="G$1" x="109.22" y="101.6" rot="R90"/>
+<instance part="R18" gate="G$1" x="109.22" y="101.6" rot="R90"/>
 <instance part="U4" gate="P" x="27.94" y="76.2"/>
 <instance part="GND5" gate="1" x="17.78" y="35.56"/>
 <instance part="P+4" gate="G$1" x="17.78" y="114.3"/>
@@ -21610,7 +21610,7 @@ Brightness</text>
 <attribute name="NAME" x="270.4592" y="97.1042" size="1.778" layer="95"/>
 <attribute name="VALUE" x="276.86" y="90.17" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R14" gate="G$1" x="260.35" y="93.98" smashed="yes">
+<instance part="R15" gate="G$1" x="260.35" y="93.98" smashed="yes">
 <attribute name="NAME" x="256.54" y="95.4786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="256.54" y="90.678" size="1.778" layer="96"/>
 </instance>
@@ -21630,26 +21630,26 @@ Brightness</text>
 </instance>
 <instance part="C5" gate="G$1" x="86.36" y="237.49"/>
 <instance part="GND6" gate="1" x="104.14" y="224.79"/>
-<instance part="Q9" gate="G$1" x="196.85" y="80.01"/>
+<instance part="Q6" gate="G$1" x="196.85" y="80.01"/>
 <instance part="C6" gate="G$1" x="93.98" y="237.49"/>
 <instance part="C13" gate="G$1" x="114.3" y="237.49"/>
 <instance part="C14" gate="G$1" x="215.9" y="67.31"/>
 <instance part="DC1" gate="G$1" x="236.22" y="72.39"/>
-<instance part="R26" gate="G$1" x="259.08" y="74.93" smashed="yes">
+<instance part="R17" gate="G$1" x="259.08" y="74.93" smashed="yes">
 <attribute name="NAME" x="255.27" y="76.4286" size="1.778" layer="95"/>
 <attribute name="VALUE" x="255.27" y="71.628" size="1.778" layer="96"/>
 </instance>
-<instance part="R28" gate="G$1" x="294.64" y="168.91" smashed="yes" rot="R90">
+<instance part="R24" gate="G$1" x="294.64" y="168.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="295.91" y="170.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="295.91" y="167.64" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="295.91" y="165.735" size="1.27" layer="96"/>
 </instance>
-<instance part="R29" gate="G$1" x="294.64" y="156.21" smashed="yes" rot="R90">
+<instance part="R25" gate="G$1" x="294.64" y="156.21" smashed="yes" rot="R90">
 <attribute name="NAME" x="295.91" y="157.48" size="1.778" layer="95"/>
 <attribute name="VALUE" x="295.91" y="154.94" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="295.91" y="153.035" size="1.27" layer="96"/>
 </instance>
-<instance part="C17" gate="G$1" x="285.75" y="158.75"/>
+<instance part="C16" gate="G$1" x="285.75" y="158.75"/>
 <instance part="SUPPLY1" gate="+24V" x="269.24" y="77.47"/>
 <instance part="SUPPLY2" gate="+24V" x="294.64" y="181.61"/>
 <instance part="GND7" gate="1" x="294.64" y="146.05"/>
@@ -21845,12 +21845,12 @@ Brightness</text>
 <wire x1="86.36" y1="229.87" x2="86.36" y2="232.41" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="149.86" x2="285.75" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="285.75" y1="149.86" x2="285.75" y2="153.67" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="149.86" x2="300.99" y2="149.86" width="0.1524" layer="91"/>
 <junction x="294.64" y="149.86"/>
-<pinref part="R29" gate="G$1" pin="1"/>
+<pinref part="R25" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="151.13" x2="294.64" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="294.64" y1="148.59" x2="294.64" y2="149.86" width="0.1524" layer="91"/>
@@ -21909,7 +21909,7 @@ Brightness</text>
 <wire x1="66.04" y1="208.28" x2="81.28" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="208.28" x2="81.28" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="E"/>
-<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -21986,7 +21986,7 @@ Brightness</text>
 </segment>
 <segment>
 <wire x1="113.03" y1="175.26" x2="110.49" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="Q2" gate="G$1" pin="C"/>
 <wire x1="104.14" y1="181.61" x2="104.14" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="177.8" x2="100.33" y2="177.8" width="0.1524" layer="91"/>
@@ -21995,7 +21995,7 @@ Brightness</text>
 <label x="106.68" y="178.054" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="Q9" gate="G$1" pin="G"/>
+<pinref part="Q6" gate="G$1" pin="G"/>
 <wire x1="194.31" y1="127" x2="194.31" y2="82.55" width="0.1524" layer="91"/>
 <label x="194.31" y="127" size="1.778" layer="95" rot="R270"/>
 <wire x1="196.85" y1="129.54" x2="194.31" y2="127" width="0.1524" layer="91"/>
@@ -22196,7 +22196,7 @@ Brightness</text>
 <pinref part="C8" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="P+2" gate="+5V" pin="+5V"/>
 <wire x1="104.14" y1="194.31" x2="104.14" y2="191.77" width="0.1524" layer="91"/>
 </segment>
@@ -22454,7 +22454,7 @@ Brightness</text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="31.75" y1="208.28" x2="55.88" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="3"/>
 </segment>
@@ -22549,7 +22549,7 @@ Brightness</text>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="96.52" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U4" gate="D" pin="OUT"/>
 <wire x1="106.68" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
@@ -22561,7 +22561,7 @@ Brightness</text>
 <net name="PC4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="C"/>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="252.73" y1="114.3" x2="252.73" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="252.73" y1="93.98" x2="255.27" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="1"/>
@@ -22582,7 +22582,7 @@ Brightness</text>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="Q5" gate="G$1" pin="B"/>
 <wire x1="269.24" y1="93.98" x2="265.43" y2="93.98" width="0.1524" layer="91"/>
 </segment>
@@ -22596,12 +22596,12 @@ Brightness</text>
 <segment>
 <wire x1="238.76" y1="160.02" x2="241.3" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="162.56" x2="285.75" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="R29" gate="G$1" pin="2"/>
+<pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="161.29" x2="294.64" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="162.56" x2="285.75" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="285.75" y1="162.56" x2="285.75" y2="161.29" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="163.83" x2="294.64" y2="162.56" width="0.1524" layer="91"/>
 <junction x="294.64" y="162.56"/>
 <label x="242.57" y="163.195" size="1.778" layer="95"/>
@@ -22610,7 +22610,7 @@ Brightness</text>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="Q9" gate="G$1" pin="D"/>
+<pinref part="Q6" gate="G$1" pin="D"/>
 <wire x1="199.39" y1="74.93" x2="203.2" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 </segment>
@@ -22629,19 +22629,19 @@ Brightness</text>
 <net name="N$28" class="0">
 <segment>
 <pinref part="DC1" gate="G$1" pin="+VOUT"/>
-<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="248.92" y1="74.93" x2="254" y2="74.93" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+30V" class="0">
 <segment>
-<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="264.16" y1="74.93" x2="269.24" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="+24V" pin="+24V"/>
 </segment>
 <segment>
 <wire x1="294.64" y1="179.07" x2="294.64" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="175.26" x2="303.53" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="303.53" y1="175.26" x2="304.8" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="173.99" x2="294.64" y2="175.26" width="0.1524" layer="91"/>
@@ -22667,7 +22667,7 @@ Brightness</text>
 </net>
 <net name="+5V/2" class="0">
 <segment>
-<pinref part="Q9" gate="G$1" pin="S"/>
+<pinref part="Q6" gate="G$1" pin="S"/>
 <pinref part="SUPPLY6" gate="G$1" pin="+5V/2"/>
 <wire x1="199.39" y1="93.98" x2="199.39" y2="85.09" width="0.1524" layer="91"/>
 </segment>
@@ -22702,7 +22702,7 @@ Brightness</text>
 <pinref part="R22" gate="G$1" pin="2"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="U4" gate="P" pin="V+"/>
 <wire x1="27.94" y1="83.82" x2="27.94" y2="109.22" width="0.1524" layer="91"/>
 <junction x="27.94" y="109.22"/>
