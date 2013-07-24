@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.635" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mic"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -46,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
@@ -3676,6 +3676,16 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="43.18" y1="17.78" x2="49.53" y2="17.78" width="0.254" layer="1"/>
 <wire x1="43.18" y1="17.78" x2="41.749" y2="17.78" width="0.25" layer="1"/>
 <wire x1="41.749" y1="17.78" x2="40.486" y2="19.043" width="0.25" layer="1"/>
+</signal>
+<signal name="N$14">
+<wire x1="19.685" y1="35.56" x2="19.05" y2="34.925" width="0" layer="1"/>
+<wire x1="19.05" y1="34.925" x2="14.605" y2="34.925" width="0" layer="1"/>
+<wire x1="14.605" y1="34.925" x2="14.605" y2="45.72" width="0" layer="1"/>
+<wire x1="14.605" y1="45.72" x2="16.51" y2="47.625" width="0" layer="1"/>
+<wire x1="16.51" y1="47.625" x2="20.32" y2="47.625" width="0" layer="1"/>
+<wire x1="20.32" y1="47.625" x2="22.225" y2="45.72" width="0" layer="1"/>
+<wire x1="22.225" y1="45.72" x2="22.225" y2="38.1" width="0" layer="1"/>
+<wire x1="22.225" y1="38.1" x2="20.955" y2="36.83" width="0" layer="1"/>
 </signal>
 </signals>
 </board>
