@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="635" altunitdist="mic" altunit="mic"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -21307,7 +21307,6 @@ SMD chip inductor</description>
 </attributes>
 <variantdefs>
 <variantdef name="nopwm"/>
-<variantdef name="no20k"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.25" drill="0.3">
@@ -21415,7 +21414,6 @@ SMD chip inductor</description>
 </part>
 <part name="R25" library="resistor" deviceset="R-EU_" device="R0805" value="20k">
 <attribute name="TOLERANCE" value="0.1%"/>
-<variant name="no20k" value="22k"/>
 </part>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="SUPPLY1" library="supply2" deviceset="+24V" device="" value="+30V"/>
@@ -21455,10 +21453,6 @@ SMD chip inductor</description>
 <part name="JP7" library="con-lsta" deviceset="FE02-1" device="" value="TEST2"/>
 <part name="SUPPLY5" library="supply2" deviceset="V+" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="R26" library="resistor" deviceset="R-EU_" device="R0805" value="inf">
-<attribute name="TOLERANCE" value="0.1%"/>
-<variant name="no20k" value="220k"/>
-</part>
 </parts>
 <sheets>
 <sheet>
@@ -21655,7 +21649,7 @@ Brightness</text>
 <attribute name="VALUE" x="295.91" y="154.94" size="1.778" layer="96"/>
 <attribute name="TOLERANCE" x="295.91" y="153.035" size="1.27" layer="96"/>
 </instance>
-<instance part="C16" gate="G$1" x="276.86" y="157.48"/>
+<instance part="C16" gate="G$1" x="285.75" y="158.75"/>
 <instance part="SUPPLY1" gate="+24V" x="269.24" y="77.47"/>
 <instance part="SUPPLY2" gate="+24V" x="294.64" y="181.61"/>
 <instance part="GND7" gate="1" x="294.64" y="146.05"/>
@@ -21695,11 +21689,6 @@ Brightness</text>
 <instance part="JP7" gate="G$1" x="284.48" y="228.6" rot="R270"/>
 <instance part="SUPPLY5" gate="1" x="118.11" y="111.76"/>
 <instance part="GND12" gate="1" x="274.32" y="85.09"/>
-<instance part="R26" gate="G$1" x="285.75" y="156.21" smashed="yes" rot="R90">
-<attribute name="NAME" x="287.02" y="157.48" size="1.778" layer="95"/>
-<attribute name="VALUE" x="287.02" y="154.94" size="1.778" layer="96"/>
-<attribute name="TOLERANCE" x="287.02" y="153.035" size="1.27" layer="96"/>
-</instance>
 </instances>
 <busses>
 <bus name="BUS1:PB[0..5],PC[0..6],PD[0..7]">
@@ -21858,8 +21847,7 @@ Brightness</text>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="149.86" x2="285.75" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="285.75" y1="149.86" x2="276.86" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="149.86" x2="276.86" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="285.75" y1="149.86" x2="285.75" y2="153.67" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="149.86" x2="300.99" y2="149.86" width="0.1524" layer="91"/>
 <junction x="294.64" y="149.86"/>
 <pinref part="R25" gate="G$1" pin="1"/>
@@ -21876,9 +21864,6 @@ Brightness</text>
 <pinref part="JP4" gate="A" pin="10"/>
 <wire x1="317.5" y1="198.12" x2="309.88" y2="198.12" width="0.1524" layer="91"/>
 <junction x="309.88" y="198.12"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="285.75" y1="151.13" x2="285.75" y2="149.86" width="0.1524" layer="91"/>
-<junction x="285.75" y="149.86"/>
 </segment>
 <segment>
 <pinref part="DIS1" gate="G$1" pin="27"/>
@@ -22610,20 +22595,16 @@ Brightness</text>
 </segment>
 <segment>
 <wire x1="238.76" y1="160.02" x2="241.3" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="162.56" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="162.56" x2="285.75" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="161.29" x2="294.64" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="162.56" x2="285.75" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="285.75" y1="162.56" x2="276.86" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="162.56" x2="276.86" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="285.75" y1="162.56" x2="285.75" y2="161.29" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="163.83" x2="294.64" y2="162.56" width="0.1524" layer="91"/>
 <junction x="294.64" y="162.56"/>
 <label x="242.57" y="163.195" size="1.778" layer="95"/>
-<junction x="276.86" y="162.56"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="285.75" y1="162.56" x2="285.75" y2="161.29" width="0.1524" layer="91"/>
 <junction x="285.75" y="162.56"/>
 </segment>
 </net>

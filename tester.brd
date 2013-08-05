@@ -2391,7 +2391,6 @@ Based on the following sources:
 </attributes>
 <variantdefs>
 <variantdef name="nopwm"/>
-<variantdef name="no20k"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.25" drill="0.3">
@@ -2820,12 +2819,11 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="R25" library="resistor" package="R0805" value="20k" x="30.48" y="25.4" smashed="yes" rot="R90">
 <attribute name="TOLERANCE" value="0.1%" x="30.48" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="29.591" y="22.479" size="1.016" layer="25"/>
+<attribute name="NAME" x="29.337" y="22.479" size="1.016" layer="25"/>
 <attribute name="VALUE" x="32.512" y="24.511" size="1.27" layer="27" rot="R90"/>
-<variant name="no20k" value="22k"/>
 </element>
 <element name="C16" library="rcl" package="C0805" value="10n" x="27.94" y="25.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="26.67" y="22.479" size="1.016" layer="25"/>
+<attribute name="NAME" x="26.543" y="22.479" size="1.016" layer="25"/>
 <attribute name="VALUE" x="26.035" y="26.035" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="JP3" library="con-lsta" package="FE04-1" value="TESTZENER" x="27.94" y="7.62" smashed="yes">
@@ -2886,12 +2884,6 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="JP7" library="con-lsta" package="FE02-1" value="TEST2" x="27.94" y="13.97" smashed="yes">
 <attribute name="VALUE" x="25.4" y="11.176" size="1.27" layer="27" ratio="10"/>
-</element>
-<element name="R26" library="resistor" package="R0805" value="inf" x="25.4" y="25.4" smashed="yes" rot="R90">
-<attribute name="TOLERANCE" value="0.1%" x="25.4" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="23.876" y="22.479" size="1.016" layer="25"/>
-<attribute name="VALUE" x="27.94" y="24.13" size="1.27" layer="27" rot="R90"/>
-<variant name="no20k" value="220k"/>
 </element>
 </elements>
 <signals>
@@ -2954,7 +2946,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP4" pad="10"/>
 <contactref element="Q5" pad="2"/>
 <contactref element="P2" pad="E"/>
-<contactref element="R26" pad="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R10" pad="1"/>
@@ -3460,9 +3451,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="33.02" y1="26.35" x2="33.02" y2="28.575" width="0.4064" layer="1"/>
 <wire x1="28.04" y1="26.25" x2="27.94" y2="26.35" width="0.4064" layer="1"/>
 <wire x1="30.48" y1="26.35" x2="27.94" y2="26.35" width="0.4064" layer="1"/>
-<contactref element="R26" pad="2"/>
-<wire x1="28.04" y1="26.25" x2="28.04" y2="26.35" width="0.4064" layer="1"/>
-<wire x1="28.04" y1="26.35" x2="25.4" y2="26.35" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$24">
 <contactref element="Q6" pad="4"/>
