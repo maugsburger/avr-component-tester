@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.635" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mic"/>
+<grid distance="0.635" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.127" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1585,6 +1585,9 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <rectangle x1="3.565" y1="2" x2="4.055" y2="3.1" layer="51"/>
 <rectangle x1="2.295" y1="2" x2="2.785" y2="3.1" layer="51"/>
 <rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="51"/>
+<circle x="-3.81" y="-1.016" radius="0.127" width="0.127" layer="21"/>
+<wire x1="-4.305" y1="-1.9" x2="-4.305" y2="1.9" width="0.127" layer="21"/>
+<wire x1="4.305" y1="1.9" x2="4.305" y2="-1.9" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1788,10 +1791,6 @@ http://www.lcd-module.de</description>
 <wire x1="49.6" y1="4.5" x2="49.6" y2="19" width="0.127" layer="51"/>
 <wire x1="49.6" y1="19" x2="-1.4" y2="19" width="0.127" layer="51"/>
 <wire x1="-1.4" y1="19" x2="-1.4" y2="4.5" width="0.127" layer="51"/>
-<wire x1="21.4" y1="23.8" x2="24.6" y2="23.8" width="0.127" layer="51"/>
-<wire x1="24.6" y1="23.8" x2="24.6" y2="23.3" width="0.127" layer="51"/>
-<wire x1="24.6" y1="23.3" x2="21.4" y2="23.3" width="0.127" layer="51"/>
-<wire x1="21.4" y1="23.3" x2="21.4" y2="23.8" width="0.127" layer="51"/>
 <pad name="1" x="0" y="0" drill="0.8128" shape="square"/>
 <pad name="2" x="2.54" y="0" drill="0.8128" shape="square"/>
 <pad name="19" x="45.72" y="0" drill="0.8128" shape="square"/>
@@ -1816,10 +1815,6 @@ http://www.lcd-module.de</description>
 <pad name="38" x="5.08" y="27.94" drill="0.8128" shape="square"/>
 <pad name="39" x="2.54" y="27.94" drill="0.8128" shape="square"/>
 <pad name="40" x="0" y="27.94" drill="0.8128" shape="square"/>
-<text x="-1.905" y="1.27" size="1.27" layer="51">1</text>
-<text x="48.895" y="1.27" size="1.27" layer="51">20</text>
-<text x="48.895" y="25.4" size="1.27" layer="51">21</text>
-<text x="-2.54" y="25.4" size="1.27" layer="51">40</text>
 <text x="18.415" y="20.32" size="1.27" layer="51">EA DOGM</text>
 <text x="19.685" y="12.065" size="1.27" layer="25">&gt;name</text>
 <text x="19.685" y="9.525" size="1.27" layer="27">&gt;value</text>
@@ -2313,14 +2308,14 @@ Based on the following sources:
 &lt;/ul&gt;
  &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SM-NE29">
+<package name="SM-NE29-B">
 <description>SMD CHIP &lt;B&gt;INDUCTOR&lt;/B&gt;&lt;p&gt;
 3 x 2.8 x 2.2 mm</description>
 <wire x1="-1.4" y1="-1.3" x2="-1.4" y2="1.3" width="0.2032" layer="51"/>
 <wire x1="1.4" y1="1.3" x2="1.4" y2="-1.3" width="0.2032" layer="51"/>
 <wire x1="1.4" y1="-1.3" x2="-1.4" y2="-1.3" width="0.2032" layer="51"/>
-<smd name="1" x="-1.25" y="0" dx="1.2" dy="2.54" layer="1"/>
-<smd name="2" x="1.25" y="0" dx="1.2" dy="2.54" layer="1"/>
+<smd name="1" x="-1.45" y="0" dx="1.5" dy="2.54" layer="1"/>
+<smd name="2" x="1.45" y="0" dx="1.5" dy="2.54" layer="1"/>
 <text x="-1.581" y="1.497" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.581" y="-2.751" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="-1.4" y1="1.3" x2="1.4" y2="1.3" width="0.2032" layer="51"/>
@@ -2842,13 +2837,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="8.89" y="56.134" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="8.12" y="57.07" size="1.27" layer="27"/>
 </element>
-<element name="L1" library="inductor-neosid" package="SM-NE29" value="33u" x="31.115" y="53.975" smashed="yes" rot="R180">
-<attribute name="NAME" x="30.353" y="51.181" size="1.016" layer="25"/>
-<attribute name="VALUE" x="36.405" y="56.535" size="1.27" layer="27" rot="R180"/>
-<attribute name="OC_NEWARK" value="unknown" x="31.115" y="53.975" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="31.115" y="53.975" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="31.115" y="53.975" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="31.115" y="53.975" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="L1" library="inductor-neosid" package="SM-NE29-B" value="33u" x="31.115" y="53.975" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.321" y="54.737" size="1.016" layer="25" rot="R270"/>
+<attribute name="VALUE" x="33.675" y="48.685" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C7" library="rcl" package="C0805" value="1u" x="8.89" y="40.64" smashed="yes" rot="R270">
 <attribute name="NAME" x="8.096" y="37.568" size="1.016" layer="25"/>
@@ -3456,18 +3447,20 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$24">
 <contactref element="L1" pad="1"/>
 <contactref element="Q6" pad="3"/>
-<wire x1="35.56" y1="55.71" x2="34.1" y2="55.71" width="0.25" layer="1"/>
-<wire x1="34.1" y1="55.71" x2="32.365" y2="53.975" width="0.25" layer="1"/>
+<wire x1="31.115" y1="52.525" x2="31.824" y2="52.525" width="0.25" layer="1"/>
+<wire x1="31.824" y1="52.525" x2="33.274" y2="53.975" width="0.25" layer="1"/>
+<wire x1="33.274" y1="53.975" x2="33.274" y2="54.737" width="0.25" layer="1"/>
+<wire x1="33.274" y1="54.737" x2="34.247" y2="55.71" width="0.25" layer="1"/>
+<wire x1="34.247" y1="55.71" x2="35.56" y2="55.71" width="0.25" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="C14" pad="1"/>
 <contactref element="DC1" pad="1"/>
 <contactref element="L1" pad="2"/>
-<wire x1="29.865" y1="53.975" x2="29.865" y2="55.265" width="0.25" layer="1"/>
-<wire x1="29.865" y1="55.265" x2="32.065" y2="57.465" width="0.25" layer="1"/>
-<wire x1="32.065" y1="57.465" x2="32.065" y2="58.42" width="0.25" layer="1"/>
 <wire x1="32.065" y1="58.42" x2="33.655" y2="60.01" width="0.25" layer="1"/>
 <wire x1="33.655" y1="60.01" x2="33.655" y2="61.595" width="0.25" layer="1"/>
+<wire x1="32.065" y1="58.42" x2="32.065" y2="56.375" width="0.25" layer="1"/>
+<wire x1="32.065" y1="56.375" x2="31.115" y2="55.425" width="0.25" layer="1"/>
 </signal>
 <signal name="N$28">
 <contactref element="DC1" pad="6"/>

@@ -17271,6 +17271,9 @@ Source: www.kingbright.com</description>
 <rectangle x1="3.565" y1="2" x2="4.055" y2="3.1" layer="51"/>
 <rectangle x1="2.295" y1="2" x2="2.785" y2="3.1" layer="51"/>
 <rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="51"/>
+<circle x="-3.81" y="-1.016" radius="0.127" width="0.127" layer="21"/>
+<wire x1="-4.305" y1="-1.9" x2="-4.305" y2="1.9" width="0.127" layer="21"/>
+<wire x1="4.305" y1="1.9" x2="4.305" y2="-1.9" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -17808,10 +17811,6 @@ http://www.lcd-module.de</description>
 <wire x1="49.6" y1="4.5" x2="49.6" y2="19" width="0.127" layer="51"/>
 <wire x1="49.6" y1="19" x2="-1.4" y2="19" width="0.127" layer="51"/>
 <wire x1="-1.4" y1="19" x2="-1.4" y2="4.5" width="0.127" layer="51"/>
-<wire x1="21.4" y1="23.8" x2="24.6" y2="23.8" width="0.127" layer="51"/>
-<wire x1="24.6" y1="23.8" x2="24.6" y2="23.3" width="0.127" layer="51"/>
-<wire x1="24.6" y1="23.3" x2="21.4" y2="23.3" width="0.127" layer="51"/>
-<wire x1="21.4" y1="23.3" x2="21.4" y2="23.8" width="0.127" layer="51"/>
 <pad name="1" x="0" y="0" drill="0.8128" shape="square"/>
 <pad name="2" x="2.54" y="0" drill="0.8128" shape="square"/>
 <pad name="19" x="45.72" y="0" drill="0.8128" shape="square"/>
@@ -17836,10 +17835,6 @@ http://www.lcd-module.de</description>
 <pad name="38" x="5.08" y="27.94" drill="0.8128" shape="square"/>
 <pad name="39" x="2.54" y="27.94" drill="0.8128" shape="square"/>
 <pad name="40" x="0" y="27.94" drill="0.8128" shape="square"/>
-<text x="-1.905" y="1.27" size="1.27" layer="51">1</text>
-<text x="48.895" y="1.27" size="1.27" layer="51">20</text>
-<text x="48.895" y="25.4" size="1.27" layer="51">21</text>
-<text x="-2.54" y="25.4" size="1.27" layer="51">40</text>
 <text x="18.415" y="20.32" size="1.27" layer="51">EA DOGM</text>
 <text x="19.685" y="12.065" size="1.27" layer="25">&gt;name</text>
 <text x="19.685" y="9.525" size="1.27" layer="27">&gt;value</text>
@@ -21052,6 +21047,20 @@ Based on the following sources:
 <wire x1="-0.5" y1="1.3" x2="0.5" y2="1.3" width="0.2032" layer="21"/>
 <wire x1="0.5" y1="-1.3" x2="-0.5" y2="-1.3" width="0.2032" layer="21"/>
 </package>
+<package name="SM-NE29-B">
+<description>SMD CHIP &lt;B&gt;INDUCTOR&lt;/B&gt;&lt;p&gt;
+3 x 2.8 x 2.2 mm</description>
+<wire x1="-1.4" y1="-1.3" x2="-1.4" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="1.4" y1="1.3" x2="1.4" y2="-1.3" width="0.2032" layer="51"/>
+<wire x1="1.4" y1="-1.3" x2="-1.4" y2="-1.3" width="0.2032" layer="51"/>
+<smd name="1" x="-1.45" y="0" dx="1.5" dy="2.54" layer="1"/>
+<smd name="2" x="1.45" y="0" dx="1.5" dy="2.54" layer="1"/>
+<text x="-1.581" y="1.497" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.581" y="-2.751" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.4" y1="1.3" x2="1.4" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="-0.5" y1="1.3" x2="0.5" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="-1.3" x2="-0.5" y2="-1.3" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -21082,6 +21091,15 @@ SMD chip inductor</description>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="BIGGERPAD" package="SM-NE29-B">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -21377,7 +21395,7 @@ www.irf.com / irlml5203.pdf</description>
 <part name="P+10" library="supply2" deviceset="+5V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="con-lumberg" deviceset="NEB21R" device=""/>
-<part name="L1" library="inductor-neosid" deviceset="SM-NE29" device="" value="33u"/>
+<part name="L1" library="inductor-neosid" deviceset="SM-NE29" device="BIGGERPAD" value="33u"/>
 <part name="SUPPLY3" library="supply2" deviceset="+5V/2" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="+5V/2" device=""/>
