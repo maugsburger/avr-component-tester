@@ -1,48 +1,74 @@
-Stückliste exportiert aus /home/mo/projects/eagle/projects/component tester/tester.sch am 7/22/13 11:01 AM
+Stückliste exportiert aus /home/mo/projects/eagle/projects/component tester/tester.sch am 9/3/14 8:42 PM
 
-Qty Value          Device              Package       Parts                        Description                                                  MF                      MPN       OC_FARNELL OC_NEWARK REICHELT  TOLERANCE _EXTERNAL_  
-2   100k           R-EU_R0805          R0805         R9, R20                      RESISTOR, European symbol                                                                                                                           
-4   100n           C-EUC0805           C0805         C3, C4, C9, C10              CAPACITOR, European symbol                                                                                                                          
-6   10k            R-EU_R0805          R0805         R11, R13, R17, R19, R21, R23 RESISTOR, European symbol                                                                                                                           
-1   10k lin        TRIM_EU-CA9V        CA9V          P2                           POTENTIOMETER                                                                                                                                       
-2   10n            C-EUC0805           C0805         C2, C16                      CAPACITOR, European symbol                                                                                                                          
-1   12k            R-EU_R0805          R0805         R22                          RESISTOR, European symbol                                                                                                                           
-1   180k           R-EU_R0805          R0805         R24                          RESISTOR, European symbol                                                                                                     0.1%                  
-1   1n             C-EUC0805           C0805         C1                           CAPACITOR, European symbol                                                                                                                          
-5   1u             C-EUC0805           C0805         C6, C7, C8, C13, C14         CAPACITOR, European symbol                                                                                                                          
-1   20k            R-EU_R0805          R0805         R25                          RESISTOR, European symbol                                                                                                     0.1%                  
-2   22p            C-EUC0805           C0805         C11, C12                     CAPACITOR, European symbol                                                                                                                          
-1   250            TRIM_EU-CA6H        CA6H          P1                           POTENTIOMETER                                                                                                                                       
-2   27k            R-EU_R0805          R0805         R8, R14                      RESISTOR, European symbol                                                                                                                           
-1   2k2            R-EU_R0805          R0805         R16                          RESISTOR, European symbol                                                                                                                           
-1   33k            R-EU_R0805          R0805         R10                          RESISTOR, European symbol                                                                                                                           
-1   33u            SM-NE29             SM-NE29       L1                           INDUCTOR                                                                                       unknown    unknown                                   
-3   3k3            R-EU_R0805          R0805         R7, R12, R18                 RESISTOR, European symbol                                                                                                                           
-3   470k           R-EU_R0805          R0805         R2, R4, R6                   RESISTOR, European symbol                                                                                                     0.1%                  
-2   47u            CPOL-EU153CLV-0505  153CLV-0505   C5, C15                      POLARIZED CAPACITOR, European symbol                                                                                                                
-1   4k7            R-EU_R0805          R0805         R15                          RESISTOR, European symbol                                                                                                                           
-1   5V/+-15V       NMA                 NMA           DC1                          DC-DC CONVERTER                                              C & D TECHNOLOGIES, INC NMA0515SC 1021434    61K3064                                   
-3   680            R-EU_R0805          R0805         R1, R3, R5                   RESISTOR, European symbol                                                                                                     0.1%                  
-1   8,000 MHz      CRYSTALHC49S        HC49/S        Q4                           CRYSTAL                                                                                        1667008    unknown                                   
-1   AB9V           AB9V                AB9V          G1                           9-V BATTERY CLIP                                                                                                                                    
-1   ATmega8/88/168 MEGA8-PU            DIL28-3       IC1                                                                                                                                                                              
-1   BAV 103        DIODE-SOD80C        SOD80C        D1                           DIODE                                                                                                                                               
-1   BC807-40SMD    BC807-40SMD         SOT23-BEC     Q3                           PNP Transistror                                                                                                                                     
-3   BC847CSMD      BC847CSMD           SOT23         Q1, Q2, Q5                   NPN Transistor                                                                                                                                      
-1   BCR421U        BCR421UHAND         SC74_INFINEON U5                           Constant current source: 10mA (without external resistor).                                                                                          
-1   EA-DOG-M162    EA-DOG-M_LCD        EA_DOGM       DIS1                                                                                                                                                                             
-1   IRFR9024       IRFR5305            D-PAK_TO252AA Q6                           HEXFET Power MOSFET                                                                                                                                 
-1   ISP            ML6                 ML6           JP1                          HARTING                                                                                        unknown    unknown                                   
-1   LM339D         LM339D              SO14          U4                           Low Power Low Offset Voltage Quad Comparators                                                                                                       
-1   LT1004CZ-2.5   LM329DZ             TO92          U1                           National Semiconductor LM329                                                                                                                        
-2   MCP1702-5002   MCP1702-5002        TO92-LOWDROP  U2, U3                                                                                                                                                                           
-1   NA 05W K       NA                  NA            K1                           RELAY                                                                                          unknown    unknown                                   
-1   NEB21R         NEB21R              NEB21R        X1                           Netzgeräte-Einbaukupplung abgewinkelte Ausführung mit Öffner                         NEB 21 R  1217037    97K6458                                   
-1   POWER          LED5MMEXT           LED5MM        LED1                         LED                                                                                                                                     ext. package
-1   POWERSW        PINHD-1X2           1X02          JP6                          PIN HEADER                                                                                                                                          
-1   SB130          SCHOTTKY-DIODE_3-10 DIODE-3-10    D2                           Schottky Diode                                                                                                                                      
-1   SP6000C-180    SP6000C-180         SP6000C-180   M1                           Gehäuse Strapubox Typ 6000                                                                                                                          
-1   TEST           FE05-1              FE05-1        JP2                          FEMALE HEADER                                                                                  unknown    unknown                                   
-1   TEST2          FE02-1              FE02-1        JP7                          FEMALE HEADER                                                                                                                                       
-1   TESTEXT        PINHD-2X5           2X05          JP4                          PIN HEADER                                                                                                          AW 226/20                       
-1   TESTZENER      FE04-1              FE04-1        JP3                          FEMALE HEADER                                                                                                                                       
+Part Value          Device                  Package       Description                                                  
+C1   1n             C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C2   10n            C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C3   100n           C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C4   100n           C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C5   47u            CPOL-EU153CLV-0505      153CLV-0505   POLARIZED CAPACITOR, European symbol                         
+C6   1u             C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C7   1u             C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C8   1u             C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C9   100n           C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C10  100n           C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C11  22p            C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C12  22p            C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C13  1u             C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C14  1u             C-EUC0805               C0805         CAPACITOR, European symbol                                   
+C15  47u            CPOL-EU153CLV-0505      153CLV-0505   POLARIZED CAPACITOR, European symbol                         
+C16  10n            C-EUC0805               C0805         CAPACITOR, European symbol                                   
+D1   BAV 103        DIODE-SOD80C            SOD80C        DIODE                                                        
+D2   SB130          SCHOTTKY-DIODE_RAD3-5-A DIODE-3-5A-V  Schottky Diode                                               
+DC1  5V/+-15V       NMA                     NMA           DC-DC CONVERTER                                              
+DIS1 EA-DOG-M162    EA-DOG-M_LCD            EA_DOGM                                                                    
+G1   AB9V           AB9V                    AB9V          9-V BATTERY CLIP                                             
+IC1  ATmega8/88/168 MEGA8-PU                DIL28-3                                                                    
+JP1  ISP            ML6                     ML6           HARTING                                                      
+JP2  TEST           FE05-1                  FE05-1        FEMALE HEADER                                                
+JP3  TESTZENER      FE04-1                  FE04-1        FEMALE HEADER                                                
+JP4  TESTEXT        PINHD-2X5               2X05          PIN HEADER                                                   
+JP7  TEST2          FE02-1                  FE02-1        FEMALE HEADER                                                
+K1   NA 05W K       NA                      NA            RELAY                                                        
+L1   33u            SM-NE29BIGGERPAD        SM-NE29-B     INDUCTOR                                                     
+LED1 POWER          LED5MMEXT               LED5MM        LED                                                          
+M1   SP6000C-180    SP6000C-180             SP6000C-180   Gehäuse Strapubox Typ 6000                                   
+P1   250            TRIM_EU-CA6H            CA6H          POTENTIOMETER                                                
+P2   10k lin        TRIM_EU-CA9V            CA9V          POTENTIOMETER                                                
+Q1   BC847CSMD      BC847CSMD               SOT23         NPN Transistor                                               
+Q2   BC847CSMD      BC847CSMD               SOT23         NPN Transistor                                               
+Q3   BC807-40SMD    BC807-40SMD             SOT23-BEC     PNP Transistror                                              
+Q4   8,000 MHz      CRYSTALHC49S            HC49/S        CRYSTAL                                                      
+Q5   BC847CSMD      BC847CSMD               SOT23         NPN Transistor                                               
+Q6   IRLML6402      IRLML6402               MICRO3        HEXFET P-Channel Power MOSFET                                
+R1   680            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R2   470k           R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R3   680            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R4   470k           R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R5   680            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R6   470k           R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R7   3k3            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R8   27k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R9   100k           R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R10  33k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R11  10k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R12  3k3            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R13  10k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R14  27k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R15  4k7            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R16  2k2            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R17  10k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R18  3k3            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R19  10k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R20  100k           R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R21  10k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R22  12k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R23  10k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R24  180k           R-EU_R0805              R0805         RESISTOR, European symbol                                    
+R25  20k            R-EU_R0805              R0805         RESISTOR, European symbol                                    
+S1   DTS-6          DTS-6                   DTS-6                                                                      
+U1   LT1004CZ-2.5   LM329DZ                 TO92          National Semiconductor LM329                                 
+U2   MCP1702-5002   MCP1702-5002            TO92-LOWDROP                                                               
+U3   MCP1702-5002   MCP1702-5002            TO92-LOWDROP                                                               
+U4   LM339D         LM339D                  SO14          Low Power Low Offset Voltage Quad Comparators                
+U5   BCR421U        BCR421UHAND             SC74_INFINEON Constant current source: 10mA (without external resistor).   
+X1   NEB21R         NEB21R                  NEB21R        Netzgeräte-Einbaukupplung abgewinkelte Ausführung mit Öffner 
