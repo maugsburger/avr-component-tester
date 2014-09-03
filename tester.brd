@@ -2765,7 +2765,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="40.005" y="31.115" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="JP4" library="pinhead" package="2X05" value="TESTEXT" x="36.83" y="8.89" smashed="yes" rot="R270">
-<attribute name="VALUE" x="32.895" y="0.855" size="1.27" layer="25"/>
+<attribute name="VALUE" x="32.895" y="15.46" size="1.27" layer="25"/>
 <attribute name="REICHELT" value="AW 226/20" x="36.83" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U3" library="asko" package="TO92-LOWDROP" value="MCP1702-5002" x="52.07" y="34.29" smashed="yes" rot="R90">
