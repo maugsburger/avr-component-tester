@@ -22081,6 +22081,12 @@ Brightness</text>
 <label x="165.1" y="127" size="1.778" layer="95" rot="R270"/>
 <pinref part="DIS1" gate="G$1" pin="28"/>
 </segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="215.9" y1="127" x2="215.9" y2="119.38" width="0.1524" layer="91"/>
+<label x="215.9" y="121.92" size="1.778" layer="95" rot="R90"/>
+<wire x1="215.9" y1="127" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PD0" class="0">
 <segment>
@@ -22119,11 +22125,6 @@ Brightness</text>
 <pinref part="DIS1" gate="G$1" pin="29"/>
 <wire x1="162.56" y1="111.76" x2="162.56" y2="127" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<wire x1="218.44" y1="129.54" x2="215.9" y2="127" width="0.1524" layer="91"/>
-<pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="215.9" y1="127" x2="215.9" y2="119.38" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="PD3" class="0">
 <segment>
@@ -22141,6 +22142,7 @@ Brightness</text>
 <wire x1="223.52" y1="129.54" x2="220.98" y2="127" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="127" x2="220.98" y2="124.46" width="0.1524" layer="91"/>
+<label x="220.98" y="121.92" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="PD4" class="0">
